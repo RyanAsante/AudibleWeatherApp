@@ -17,9 +17,15 @@ public class WeatherAppData {
         metric = Weathermetric;
     }
 
-    WeatherAppData data = new WeatherAppData()
-
-
+   public String getDate() {
+        return date;
+   }
+   public String getLocationName() {
+        return locationName;
+   }
+   public String getMetric() {
+        return metric;
+   }
 
 }
 

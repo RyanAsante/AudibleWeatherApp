@@ -20,7 +20,10 @@ public class WeatherAppUserData {
      System.out.println("Please enter the date: ");
      userDate = scanner.nextLine();
 
-    WeatherAppData data = new WeatherAppData (userDate,userLocation,UserMetric);
+    WeatherAppData data = new WeatherAppData (userDate,userLocation,userMetric);
+
+
+
 
 
 
