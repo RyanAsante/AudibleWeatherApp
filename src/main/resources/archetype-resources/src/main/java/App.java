@@ -1,20 +1,21 @@
-package $org.example;
+package org.example;
 
-import.java.util.Scanner;
-import org.apache.http.HttpEntity;
-import org.apache.http.entity.BasicHttpEntity;
+import java.util.Scanner;
+//import org.apache.http.HttpEntity;
+//import org.apache.http.entity.BasicHttpEntity;
 
-public class WeatherAppData {
+public class App {
 
-    priavte String date;
+    private String date;
     private String locationName;
-    priavte String metric;
+    private String measurement;
     private final String API_KEY = "YMX5CP95D2LLVM4P4ABH5WNN4";
+    private String apiEndPoint = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/";
 
-    public WeatherAppData (String Weatherdate, String WeatherlocationName, String Weathermetric) {
+    public App (String Weatherdate, String WeatherlocationName, String Weathermeasurement) {
         date = Weatherdate;
         locationName = WeatherlocationName;
-        metric = Weathermetric;
+        measurement = Weathermeasurement;
     }
 
    public String getDate() {
@@ -23,8 +24,11 @@ public class WeatherAppData {
    public String getLocationName() {
         return locationName;
    }
-   public String getMetric() {
-        return metric;
+   public String getMeasurement() {
+        return measurement;
+   }
+   public String getApiEndPoint() {
+      return apiEndPoint;
    }
 
 }
